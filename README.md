@@ -20,6 +20,7 @@ Functions above all returns a Dictionary Object to store the result of *strSQL* 
 
 ## Get values from RES
 There are functions to get the values from *res* easier:
+
 **SQL\_GetValue1Line**
 
 arguments:
