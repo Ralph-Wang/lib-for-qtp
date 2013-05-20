@@ -25,17 +25,24 @@ There are functions to get the values from *res* easier:
 arguments:
 
 > *res*,the result of SQL\_GetValue1Line
+> 
 > *Field*,the Field Name of the table created by *strSQL*
+
 **SQL\_GetValue1Field**
 
 arguments:
 
 > *res*,the result of SQL\_GetValue1Line
+> 
 > *rowNum*,the row Number of table created by *strSQL*
+
 **SQL\_GetValue1FullTable**
 
 arguments:
 
 > *res*,the result of SQL\_GetValue1Line
+>
 > *rowNum*,the row Number of table created by *strSQL*
+> 
 > *Field*,the Field Name of the table created by *strSQL*
+
