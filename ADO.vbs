@@ -2,7 +2,7 @@
 Option Explicit
 
 '测试函数,使用前请注释掉
-test
+'test
 Private Function test()
     Const DB = "test"
     Dim DBstr_test
