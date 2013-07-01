@@ -1,3 +1,4 @@
 # ignore all test files
 test.*
 *.txt
+*.lck
