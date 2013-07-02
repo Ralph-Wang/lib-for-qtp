@@ -1,4 +1,11 @@
 # ignore all test files
 test.*
+
 *.txt
+
+# ignore all lock files from QTP
 *.lck
+
+# ignore excel files for ur testing
+*.xls
+*.xlsx
