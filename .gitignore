@@ -1,6 +1,7 @@
 # ignore all test files
 test.*
 
+# ignore *.txt files used by QTP
 *.txt
 
 # ignore all lock files from QTP
