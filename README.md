@@ -18,5 +18,5 @@ Such as Random String and so on.
 
 ## ReadConfigFromExcel.vbs
 only one function here. 
-`GetConfigFromExcel`
+`GetConfigFromExcel`    
 use it to get config Item&Value from a Excel file(a *.xls not a *.xlsx)
