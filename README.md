@@ -15,3 +15,8 @@ Some funcitons to control DOM object.
 
 Some functions that be used frequently.    
 Such as Random String and so on.    
+
+## ReadConfigFromExcel.vbs
+only one function here. 
+`GetConfigFromExcel`
+use it to get config Item&Value from a Excel file(a *.xls not a *.xlsx)
