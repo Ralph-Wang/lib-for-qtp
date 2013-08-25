@@ -11,10 +11,17 @@ You can also use it to connect other DB system by ODBC
 
 Some funcitons to control DOM object.
 
-## My.vbs    
+## init.vbs    
 
-Some functions that be used frequently.    
-Such as Random String and so on.    
+functions to start the Application under test
+
+## DataGen.vbs
+
+functions to generate random Test data
+
+## checkPoints.vbs
+
+functions to check the test result and report them into standard reporters.
 
 ## ReadConfigFromExcel.vbs
 only one function here. 
