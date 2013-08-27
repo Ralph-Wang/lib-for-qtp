@@ -28,4 +28,4 @@ only one function here.
 `GetConfigFromExcel`    
 use it to get config Item&Value from a Excel file(a *.xls not a *.xlsx)
 
-test
+test22
