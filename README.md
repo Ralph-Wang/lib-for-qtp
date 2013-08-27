@@ -27,3 +27,5 @@ functions to check the test result and report them into standard reporters.
 only one function here. 
 `GetConfigFromExcel`    
 use it to get config Item&Value from a Excel file(a *.xls not a *.xlsx)
+
+test
