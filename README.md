@@ -29,3 +29,4 @@ only one function here.
 use it to get config Item&Value from a Excel file(a *.xls not a *.xlsx)
 
 test22
+3
