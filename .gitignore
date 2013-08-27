@@ -10,3 +10,6 @@ test.*
 # ignore excel files for ur testing
 *.xls
 *.xlsx
+
+# ignore all qfl files
+*.qfl
