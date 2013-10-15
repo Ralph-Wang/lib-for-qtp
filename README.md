@@ -26,7 +26,5 @@ functions to check the test result and report them into standard reporters.
 ## ReadConfigFromExcel.vbs
 only one function here. 
 `GetConfigFromExcel`    
-use it to get config Item&Value from a Excel file(a *.xls not a *.xlsx)
+use it to get config Item&Value from a Excel file(a \*.xls not a \*.xlsx)
 
-test22
-3
