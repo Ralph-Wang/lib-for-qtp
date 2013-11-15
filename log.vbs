@@ -8,11 +8,11 @@ Private Sub test()
 End Sub
 
 Public Function writeLog(logMsg):
-    Dim localTime, NewLog, logFile
+    Dim localTime, newLog, logFile
     localTime = "[" & Now() & "]"
-    NewLog = localTime & " " & logMsg
+    newLog = localTime & " " & logMsg
     Set logFile = openLogFile()
-    logFile.WriteLine(NewLog)
+    logFile.WriteLine(newLog)
     Set logFile = Nothing
 End Function
 
