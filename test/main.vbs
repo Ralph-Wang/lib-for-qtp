@@ -7,8 +7,8 @@ Function include(strFile)
   ExecuteGlobal content
 End Function
 
-Function assert(expValue, actValue, errDescription)
-  If expValue <> actValue Then
+Function assert(expression, errDescription)
+  If not expression Then
     err.raise 10000,"AssertError", errDescription
   End If
 End Function
