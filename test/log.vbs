@@ -1,29 +1,25 @@
 Option Explicit
 
-Private Const LogName = "test.log" ' where to write
-
-'test
-Private Sub test()
-    writeLog("write a log")
-End Sub
+Private Const logFileName = "test.log" ' where to write
+Private Const forAppending = 8 ' open files for append
 
 Public Function writeLog(logMsg):
-    Dim localTime, NewLog, logFile
-    localTime = "[" & Now() & "]"
-    NewLog = localTime & " " & logMsg
+    Dim localTime, logFile
+    localTime = "[" & Now() & "]:"
+    logMsg = localTime & " " & logMsg
     Set logFile = openLogFile()
-    logFile.WriteLine(NewLog)
+    logFile.WriteLine(logMsg)
     Set logFile = Nothing
 End Function
 
 Private Function openLogFile()
     Dim fso
     Set fso = CreateObject("Scripting.FileSystemObject")
-    If fso.FileExists(LogName) Then
-        Set openLogFile = fso.OpenTextFile(LogName, 8, false)
+    If fso.FileExists(logFileName) Then
+        Set openLogFile = fso.OpenTextFile(logFileName, forAppending, false)
     Else
-        fso.CreateTextFile(LogName)
-        Set openLogFile = fso.OpenTextFile(LogName, 8, false)
+        fso.CreateTextFile(logFileName)
+        Set openLogFile = fso.OpenTextFile(logFileName, forAppending, false)
     End If
     Set fso = Nothing
 End Function
