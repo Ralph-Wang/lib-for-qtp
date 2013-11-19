@@ -1,6 +1,3 @@
-# ignore all test files
-test.*
-
 # ignore *.txt files used by QTP
 *.txt
 
