@@ -56,7 +56,32 @@ assert (len(theRandUnique) = 14), "应该生成14位唯一字符串"
 theSelected = Browser(":=").Page(":=").WebList("html id:=theSelect").randomSelect()
 assert (inStr(1, "1234", theSelected) > 0), "随机选择应该在可选范围内(1234)"
 
+'''''''''''''''''
+' > ReadConfigFromExcel.vbs
+'''''''''''''''''
+' unstable for x86
+'Set theDict = GetConfigFromExcel("C:\Users\Administrator\Desktop\github\lib-for-qtp\test.xls","test","sKey","sValue")
+'assert (theDict.Item("theItem") = "theValue"), "theItem对应的值应该是theValue"
 '' an implementation of assertion
+
+'''''''''''''''''
+' > CheckPoint.vbs
+'''''''''''''''''
+theMatch = regSearch("\d+", "test123match")
+assert theMatch="123", "没有找都匹配的123"
+
+theRes = assertEqual(1, 1, 0)
+assert theRes=true, "1=1断言应为真"
+theRes = assertEqual(1, 2, 0)
+assert theRes=false, "1=2断言应为假"
+
+theRes = assertEqual("一部分", "一部分123!!!", 1)
+assert theRes=true, "'一部分', '一部分123!!!'模糊匹配断言应为真"
+theRes = assertEqual("一部分123!!!", "一部分", 1)
+assert theRes=true, "'一部分123!!!', '一部分' 模糊匹配断言应为真"
+theRes = assertEqual("一部分123!!!", "xyz", 1)
+assert theRes=false, "'一部分123!!!', 'xyz' 模糊匹配断言应为假"
+
 Function assert(expression, errDescription)
    If expression Then
 	   reporter.ReportEvent micPass, "Assertion", "Pass"
@@ -64,6 +89,15 @@ Function assert(expression, errDescription)
        reporter.ReportEvent micFail, "Assertion", errDescription
    End If
 End Function
+
+
+
+
+
+
+
+
+
 
 
 

@@ -19,12 +19,20 @@ functions to start the Application under test
 
 functions to generate random Test data
 
-## checkPoints.vbs
+## CheckPoints.vbs
 
 functions to check the test result and report them into standard reporters.
 
 ## ReadConfigFromExcel.vbs
 only one function here. 
 `GetConfigFromExcel`    
-use it to get config Item&Value from a Excel file(a \*.xls not a \*.xlsx)
+use it to get config Item&Value from a Excel file(a \*.xls)
 
+## log.vbs
+write logs    
+not necessary for test lib.   
+used for controller
+
+## test
+use QTP to test the lib    
+ADO.vbs & log.vbs are not in tests
